@@ -49,6 +49,8 @@
 
             void set_line_wrap(Php::Parameters &parameters);
 
+            void set_line_wrap_mode(Php::Parameters &parameters);
+
             void set_lines(Php::Parameters &parameters);
 
             Php::Value get_mnemonic_keyval();

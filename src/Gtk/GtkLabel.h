@@ -111,6 +111,8 @@
 
             Php::Value get_ellipsize();
 
+            void select_region(Php::Parameters &parameters);
+
     };
 
 #endif

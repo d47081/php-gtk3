@@ -343,3 +343,10 @@ Php::Value GtkLabel_::get_ellipsize()
 	return ret;
 }
 
+void GtkLabel_::select_region(Php::Parameters& parameters)
+{
+	gint start_pos = parameters[0];
+	gint end_pos = parameters[1];
+
+	gtk_label_select_region(GTK_LABEL(instance), start_pos, end_pos);
+}

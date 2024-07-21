@@ -6,12 +6,12 @@
     #include <gtk/gtk.h>
 
 	#include "GtkWidget.h"
-    
+
 	#include "../../php-gtk.h"
 
     /**
      * GtkLabel_
-     * 
+     *
      * https://developer.gnome.org/gtk3/stable/GtkLabel.html
      */
     class GtkLabel_ : public GtkWidget_
@@ -108,6 +108,8 @@
             void set_ellipsize(Php::Parameters &parameters);
 
             Php::Value get_ellipsize();
+
+            void select_region(Php::Parameters &parameters);
 
     };
 
